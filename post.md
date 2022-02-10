@@ -29,43 +29,124 @@ Conectar o BD sqlite ao Pandas:
     conn = sql.connect('treinadores.db')
     treinadores = pd.read_sql('SELECT * FROM treinadores', conn)
 
-And then execute:
-
-    $ bundle
-
 Lendo uma amostra do dataset:
 
     treinadores.head(n=6)
 
-Or install it yourself as:
+<img src="post/body_1.png">
 
-    $ gem install jekyll-shell-theme
+Renomear algumas colunas:
 
-### Remote theme method
+    treinadores = treinadores.rename(columns={'Mesesnocomando': 'Meses_No_Comando'})
+    treinadores = treinadores.rename(columns={'Títulos': 'Titulos'})
 
-Make sure your `Gemfile` contains the `github-pages` gem and **not** the `jekyll-shell-theme` gem.
+Preparação dos dados:
 
-Then add `remote_theme: "tareqdandachi/jekyll-shell-theme"` to your `_config.yml` file.
-*Remove* any other `theme:` or `remote_theme:` entry.
+    treinadores = treinadores.replace({',': '.'}, regex=True)
 
-*For an example of what a config file could look like, look at [example-config.yml](https://github.com/tareqdandachi/jekyll-shell-theme/blob/master/example-config.yml)*
+Comandos para remover outliers do dataset:
 
-## Usage
+    treinadores.duplicated()
+    treinadores.dropna() 
+    treinadores.fillna() 
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Procurando problemas nas variaveis 
 
-## Contributing
+    treinadores.dtypes
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/tareqdandachi/jekyll-shell-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+<img src="post/body_2.png">
 
-## Development
+Converter 'Aproveitamento' de objeto p/ ponto flutante: 
 
-Everyone is welcome to fork this repo and modify the code. To set up your environment to develop this theme, run `bundle install`.
+    treinadores["Aproveitamento"] = treinadores["Aproveitamento"].astype(str).astype(float)
 
-To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using the theme. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Conferindo:
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-shell-theme.gemspec` accordingly.
+    treinadores.dtypes
+
+<img src="post/body_3.png">
+
+Conferindo o resultado das transformações:
+
+    treinadores.head()
+
+<img src="post/body_4.png">
+
+Anos com o maior nº de treinadores ao longo do tempo:
+
+   treinadores["Ano"].value_counts().sort_values().plot.bar(title="Ano com o maior nº de treindadores")
+
+<img src="post/analise_1.png">
+
+Nacionalidade:
+
+  treinadores["Nacionalidade"].value_counts().plot.pie(ylabel='')
+
+<img src="post/analise_2.png">
+
+Treinador:
+  
+  treinadores["Treinador"].value_counts().sort_values().plot.bar(title="Treinador")
+
+<img src="post/analise_3.png">
+
+Treinadores:
+
+ treinadores["Time"].value_counts().sort_values().plot.bar(title="Clubes com o maior nº de Treinadores")
+
+<img src="post/analise_4.png">
+
+Aproveitamento:
+
+   df = pd.DataFrame(treinadores,columns=['Treinador','Aproveitamento'])
+   ax = df.plot.bar(x = 'Treinador', y= 'Aproveitamento')
+
+<img src="post/analise_5.png">
+
+Titulos:
+
+   treinadores["Titulos"].value_counts().sort_values().plot.bar(ylabel='')
+
+<img src="post/analise_6.png">
+
+Treinadores:
+  df = pd.DataFrame(treinadores,columns=['Treinador','Titulos'])
+  df.groupby(['Treinador']).sum().plot(kind='pie', y='Titulos', ylabel='')
+  plt.legend().remove()
+
+<img src="post/analise_7.png">
+
+rsrsrs:
+
+  df = pd.DataFrame(treinadores,columns=['Treinador','Meses_No_Comando'])
+  ax = df.plot.bar(x = 'Treinador', y= 'Meses_No_Comando')
+
+<img src="post/analise_8.png">
+
+rsrsrs:
+
+  treinadores = pd.DataFrame(treinadores,columns=['Meses_No_Comando','Aproveitamento'])
+  df = pd.DataFrame(treinadores);
+  _ = sns.lmplot(x = 'Meses_No_Comando', y= 'Aproveitamento', data=df, ci=None)
+
+<img src="post/analise_9.png">
+
+rsrsrs:
+  treinadores = pd.DataFrame(treinadores,columns=['Meses_No_Comando','Aproveitamento'])
+  df = pd.DataFrame(treinadores);
+  _ = sns.lmplot(x = 'Meses_No_Comando', y= 'Aproveitamento', data=df, ci=None) 
+
+ree:
+ treinadores = pd.DataFrame(treinadores,columns=['Aproveitamento', 'Titulos'])
+ df = pd.DataFrame(treinadores);
+ _ = sns.lmplot(x = 'Aproveitamento', y= 'Titulos', data=df, ci=None)
+
+<img src="post/analise_10.png">
+
+fechando o banco de dados:
+  
+  conn.close()
+
 
 ## License
 
