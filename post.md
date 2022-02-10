@@ -1,4 +1,4 @@
-<img src="assets/theme_logo.jpg" class="detail_header">
+<img src="assets/portfolio.png" class="detail_header">
 
 # Analise dos treinadores estrangeiros na elite do futebol brasileiro
 
@@ -10,7 +10,7 @@ Com o avanço do mercado de treinadores estrangeiros no futebol brasileiro, reso
 - Python e Bibliotecas(Pandas e Matplotlib)
 - Jupyter Notebook
 
-Você poderá ter acesso ao Dataset no meu [Github](https://tareqdandachi.github.io/jekyll-shell-theme).
+Você poderá ter acesso ao Dataset no meu [Github](https://github.com/dionatandiego11/Datasets/blob/9be198537b84862ec799c4582746ef00424d5b85/treinadores.csv).
 
 ## Mãos a obra!
 
