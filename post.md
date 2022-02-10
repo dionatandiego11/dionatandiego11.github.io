@@ -111,9 +111,9 @@ Titulos:
 <img src="post/analise_6.png">
 
 Treinadores:
-    df = pd.DataFrame(treinadores,columns=['Treinador','Titulos'])
-    df.groupby(['Treinador']).sum().plot(kind='pie', y='Titulos', ylabel='')
-    plt.legend().remove()
+     df = pd.DataFrame(treinadores,columns=['Treinador','Titulos'])
+     df.groupby(['Treinador']).sum().plot(kind='pie', y='Titulos', ylabel='')
+     plt.legend().remove()
 
 <img src="post/analise_7.png">
 
@@ -124,27 +124,23 @@ rsrsrs:
 
 <img src="post/analise_8.png">
 
-rsrsrs:
+Correlação entre Aproveitamento e Meses no comando:
 
-     treinadores = pd.DataFrame(treinadores,columns=['Meses_No_Comando','Aproveitamento'])
-     df = pd.DataFrame(treinadores);
-     _= sns.lmplot(x = 'Meses_No_Comando', y= 'Aproveitamento', data=df, ci=None)
-
-<img src="post/analise_9.png">
-
-rsrsrs:
     treinadores = pd.DataFrame(treinadores,columns=
     ['Meses_No_Comando','Aproveitamento'])
     df = pd.DataFrame(treinadores);
     _= sns.lmplot(x = 'Meses_No_Comando', 
     y= 'Aproveitamento', data=df, ci=None) 
 
-ree:
-   treinadores = pd.DataFrame(treinadores,columns=
-   ['Aproveitamento', 'Titulos'])
-   df = pd.DataFrame(treinadores);
-   _= sns.lmplot(x = 'Aproveitamento', 
-   y= 'Titulos', data=df, ci=None)
+<img src="post/analise_9.png">
+
+Correlação entre Aproveitamento e títulos:
+
+     treinadores = pd.DataFrame(treinadores,columns=
+     ['Aproveitamento', 'Titulos'])
+     df = pd.DataFrame(treinadores);
+     _= sns.lmplot(x = 'Aproveitamento', 
+     y= 'Titulos', data=df, ci=None)
 
 <img src="post/analise_10.png">
 
