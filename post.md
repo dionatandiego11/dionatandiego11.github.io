@@ -73,7 +73,8 @@ Conferindo o resultado das transformações:
 
 Anos com o maior nº de treinadores ao longo do tempo:
 
- treinadores["Ano"].value_counts().sort_values().plot.bar(title="Ano com o maior nº de treindadores")
+    treinadores["Ano"].value_counts().sort_values().
+    plot.bar(title="Ano com o maior nº de treindadores")
 
 <img src="post/analise_1.png">
 
