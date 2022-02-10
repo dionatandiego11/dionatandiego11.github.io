@@ -133,14 +133,18 @@ rsrsrs:
 <img src="post/analise_9.png">
 
 rsrsrs:
-     treinadores = pd.DataFrame(treinadores,columns=['Meses_No_Comando','Aproveitamento'])
-     df = pd.DataFrame(treinadores);
-     _= sns.lmplot(x = 'Meses_No_Comando', y= 'Aproveitamento', data=df, ci=None) 
+    treinadores = pd.DataFrame(treinadores,columns=
+    ['Meses_No_Comando','Aproveitamento'])
+    df = pd.DataFrame(treinadores);
+    _= sns.lmplot(x = 'Meses_No_Comando', 
+    y= 'Aproveitamento', data=df, ci=None) 
 
 ree:
-   treinadores = pd.DataFrame(treinadores,columns=['Aproveitamento', 'Titulos'])
+   treinadores = pd.DataFrame(treinadores,columns=
+   ['Aproveitamento', 'Titulos'])
    df = pd.DataFrame(treinadores);
-   _= sns.lmplot(x = 'Aproveitamento', y= 'Titulos', data=df, ci=None)
+   _= sns.lmplot(x = 'Aproveitamento', 
+   y= 'Titulos', data=df, ci=None)
 
 <img src="post/analise_10.png">
 
