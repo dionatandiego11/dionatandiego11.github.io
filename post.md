@@ -6,7 +6,6 @@ Com o avanço do mercado de treinadores estrangeiros no futebol brasileiro, reso
 
 **Nesta análise** utilizarei as seguintes ferramentas:
 
-- Dataset
 - Sqlite3
 - Python e Bibliotecas(Pandas e Matplotlib)
 - Jupyter Notebook
@@ -74,7 +73,7 @@ Conferindo o resultado das transformações:
 
 Anos com o maior nº de treinadores ao longo do tempo:
 
-   treinadores["Ano"].value_counts().sort_values().plot.bar(title="Ano com o maior nº de treindadores")
+ treinadores["Ano"].value_counts().sort_values().plot.bar(title="Ano com o maior nº de treindadores")
 
 <img src="post/analise_1.png">
 
