@@ -4,7 +4,7 @@ permalink: /preview
 permalink_name: /preview
 title: Visualização dos projetos desenvolvidos
 
-detail_image: ../assets/portfolio.png
+detail_image: ./assets/portfolio.png
 ---
 
 # Posts
