@@ -2,13 +2,17 @@
 layout: home
 permalink: /
 permalink_name: /home
-title: Portfolio Dionatan Resende
+title: Portfolio by Dionatan Resende
 
 detail_image: assets/portfolio.png
 ---
 
-# jekyll-shell-theme
+# Dionatan Resende
 
-**Jekyll Shell Theme** is an open source light-weight customizable jekyll theme for your site! You can use it to spice up your personal profiles, project pages or just about anything!
+**Como navegar neste site?** Este site é um arquivo de todos os trabalhos que tenho feito nos últimos anos, tanto na faculdade, quanto em outros lugares. 
 
-No prior web-dev knowledge is required to use the theme to make a website, just follow the instructions in [/read-me](read-me) to set up your web page and start filling it with hackery content! You can see sone features of the theme in [/preview](preview).
+- Se você caiu aqui de paraqueadas ou deseja me conhecer melhor vá até o [/read-me](Sobre mim).
+- Caso esteja procurando por analises vá até[/post](post).
+- Caso esteja procurando por app's vá até[/post](aplicativos).
+- Não achou o que precisa? Entre em [/post](Contato)
+[/preview](preview)
