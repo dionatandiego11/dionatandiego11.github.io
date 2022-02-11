@@ -7,9 +7,9 @@
  No mercado de trabalho formal, trabalhei três anos no "Hotel Nossa Sra Aparecida" como recepcionista e na oficina(MINAS 381 molas & serviços) me dediquei ao setor administrativo.
  Hoje me dedico a um projeto de iniciação cientifica: Otimização da Usinabilidade de Materiais Aplicados a Área Médica (protética) por Meio de Redes Neurais Artificiais (RNA), com previsão de término em Maio de 2021.
 
-  - Sobre meus projetos, você pode acessá-los em[/preview](preview)
+  - Sobre meus projetos, você pode acessá-los em [/preview](preview)
   - Acesse meu perfil no Linkedin em [linkedin.com/dionatandiego11](https://www.linkedin.com/in/dionatandiego11/)
-  - Peffil no GitHub[github.com/dionatandiego11](https://github.com/dionatandiego11)
+  - Peffil no GitHub [github.com/dionatandiego11](https://github.com/dionatandiego11)
 
 ## License
 
