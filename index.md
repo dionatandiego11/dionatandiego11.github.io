@@ -4,7 +4,7 @@ permalink: /
 permalink_name: /home
 title: Portfolio by Dionatan Resende
 
-detail_image: assets/theme_logo.svg
+detail_image: assets/portfolio.png
 ---
 
 # Dionatan Resende

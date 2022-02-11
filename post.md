@@ -1,4 +1,9 @@
-<img src="assets/portfolio.png" class="detail_header">
+---
+layout: page
+title: Post
+
+detail_image: assets/portfolio.png
+---
 
 # Analise dos treinadores estrangeiros na elite do futebol brasileiro
 
