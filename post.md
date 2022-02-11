@@ -1,7 +1,4 @@
 <img src="assets/portfolio.png" class="detail_header">
----
-title: Portfolio by Dionatan Resende
----
 
 # Analise dos treinadores estrangeiros na elite do futebol brasileiro
 
