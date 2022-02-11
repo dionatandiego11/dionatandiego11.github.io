@@ -17,6 +17,8 @@ Com o avanço do mercado de treinadores estrangeiros no futebol brasileiro, reso
 
 Você poderá ter acesso ao Dataset no meu [Github](https://github.com/dionatandiego11/Datasets/blob/9be198537b84862ec799c4582746ef00424d5b85/treinadores.csv).
 
+# Observação, os dados foram retirados dos anos 2003 ~ 2021, infelizemnte não estão "ajustados" visto que englobam estaduais, copa do Brasil, libertadores, etc. O certo seria apenas o campeonato brasileiro, mas não consegui encontrar :( 
+
 ## Mãos a obra!
 
 Primeiramente vamos importar as bibliotecas Necessárias:
