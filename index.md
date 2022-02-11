@@ -11,6 +11,6 @@ detail_image: assets/theme_logo.svg
 
 **Como navegar neste site?** Este site é um arquivo de todos os trabalhos que tenho feito nos últimos anos, tanto na faculdade, quanto em outros lugares. 
 
-- Se você caiu aqui de paraqueadas ou deseja me conhecer melhor vá até [/read-me](Sobre mim).
-- Caso esteja procurando por projetos como analises e app's? Então vá até [/preview]().
+- Se você caiu aqui de paraqueadas ou deseja me conhecer melhor vá até [/read-me](read-me).
+- Caso esteja procurando por projetos como analises e aplicativos? Então vá até [/preview]().
 - Não achou o que precisa? Entre em [/contato](Contato).
