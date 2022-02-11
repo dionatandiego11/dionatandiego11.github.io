@@ -1,4 +1,4 @@
-<img src="assets/portfolio.png" class="detail_header">
+<img src="assets/theme_logo.svg" class="detail_header">
 
 # Analise dos treinadores estrangeiros na elite do futebol brasileiro
 
@@ -14,7 +14,7 @@ Você poderá ter acesso ao Dataset no meu [Github](https://github.com/dionatand
 
 ## Mãos a obra!
 
-Importando as bibliotecas necessarias:
+Primeiramente vamos importar as bibliotecas necessarias:
 
     import sqlite3 as sql
     import pandas as pd
@@ -23,23 +23,25 @@ Importando as bibliotecas necessarias:
     %matplotlib inline
 
 
-Conectar o BD sqlite ao Pandas:
+Em seguida vamos conectar o Banco de Dados ao Pandas:
 
     conn = sql.connect('treinadores.db')
     treinadores = pd.read_sql('SELECT * FROM treinadores', conn)
 
-Lendo uma amostra do dataset:
+Agora vamos pegar uma amostra do dataset:
 
     treinadores.head(n=6)
 
 <img src="post/body_1.png">
 
-Renomear algumas colunas:
+# Já é possível perceber alguns problemas no dataset, como a má codificação do cabeçalho 
+
+Então vamos renomear algumas colunas que estão má codificadas: 
 
     treinadores = treinadores.rename(columns={'Mesesnocomando': 'Meses_No_Comando'})
     treinadores = treinadores.rename(columns={'Títulos': 'Titulos'})
 
-Preparação dos dados:
+Neste passo vamos continuar preparando os dados
 
     treinadores = treinadores.replace({',': '.'}, regex=True)
 
@@ -49,7 +51,7 @@ Comandos para remover outliers do dataset:
     treinadores.dropna() 
     treinadores.fillna() 
 
-Procurando problemas nas variaveis 
+Procurando problemas nas variaveis: 
 
     treinadores.dtypes
 
