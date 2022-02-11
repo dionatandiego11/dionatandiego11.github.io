@@ -10,7 +10,7 @@ detail_image: ./assets/portfolio.png
 # Posts
 
  - Analise sobre o desempenho dos treinadores estrangeiros no futebol brasileiro 
-   entre 2003 ~ 2021 --> [/post_1](post/post_1/post_1)
+   entre 2003 ~ 2021 --> [post_1](post/post_1/post_1)
 
 ## Aplicativos 
 

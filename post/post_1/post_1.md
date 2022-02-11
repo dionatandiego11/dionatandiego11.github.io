@@ -2,7 +2,7 @@
 layout: page
 title: Post 1
 
-detail_image: assets/portfolio.png
+detail_image: ../../assets/portfolio.png
 ---
 
 # Analise dos treinadores estrangeiros na elite do futebol brasileiro
