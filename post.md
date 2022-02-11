@@ -1,4 +1,4 @@
-<img src="assets/theme_logo.svg" class="detail_header">
+<img src="assets/portfolio.png" class="detail_header">
 
 # Analise dos treinadores estrangeiros na elite do futebol brasileiro
 
