@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Post 1
+title: Treinadores estrangeiros na elite do futebol brasileiro
 
 detail_image: ../../assets/portfolio.png
 ---
@@ -19,7 +19,7 @@ Você poderá ter acesso ao Dataset no meu [Github](https://github.com/dionatand
 
 ## Mãos a obra!
 
-Primeiramente vamos importar as bibliotecas necessarias
+Primeiramente vamos importar as bibliotecas Necessárias:
 
 ```python 
 
@@ -30,7 +30,7 @@ Primeiramente vamos importar as bibliotecas necessarias
     %matplotlib inline
 ```
 
-Em seguida vamos conectar o Banco de Dados ao Pandas:
+Em seguida vamos importar o Banco de Dados com o Pandas:
 ```python 
 conn = sql.connect('treinadores.db')
 treinadores = pd.read_sql('SELECT * FROM treinadores', conn)
@@ -42,30 +42,27 @@ treinadores.head(n=6)
 
 <img src="body_1.png">
 
-Já é possível perceber alguns problemas no dataset, como a má codificação do cabeçalho 
+Já é possível perceber alguns problemas no dataset, como a má codificação do cabeçalho. 
 
-Então vamos renomear algumas colunas que estão má codificadas: 
+Então vamos renomear algumas colunas que estão mal codificadas: 
 ```python 
 treinadores = treinadores.rename(columns={'Mesesnocomando': 'Meses_No_Comando'})
 treinadores = treinadores.rename(columns={'Títulos': 'Titulos'})
 ```
-Neste passo vamos continuar preparando os dados
-```python 
-treinadores = treinadores.replace({',': '.'}, regex=True)
-```
+
 Comandos para encontrar e remover outliers do dataset, caso necessario:
 ```python 
     #treinadores.duplicated()
     #treinadores.dropna() 
     #treinadores.fillna() 
 ```
-Procurando problemas nas variaveis: 
+Agora vamos procurar problemas nas variaveis: 
 ```python 
 treinadores.dtypes
 ```
 <img src="body_2.png">
 
-Converter 'Aproveitamento' de objeto p/ ponto flutante: 
+Observe que "Aproveitamento" está como string, vamos modificar para ponto flutuante:
 ```python 
 treinadores["Aproveitamento"] = treinadores["Aproveitamento"].astype(str).astype(float)
 ```
@@ -81,44 +78,46 @@ treinadores.head()
 ```
 <img src="body_4.png">
 
-Anos com o maior nº de treinadores ao longo do tempo:
+# Após fazer o processamento dos dados, enfim vamos analisar os dados.
+
+Primeiramente vamos observar a tendencia de aumento dos treinadores estrangeiros ao longo do tempo.
 ```python 
 treinadores["Ano"].value_counts().sort_values().plot.bar(title="Ano com o maior nº de treindadores")
 ```
 <img src="analise_1.png">
 
-Nacionalidade:
+Aqui conhecemos a nacionalidade deles.
 ```python 
 treinadores["Nacionalidade"].value_counts().plot.pie(ylabel='')
 ```
 <img src="analise_2.png">
 
-Treinador:
+Neste gráfico podemos observar os treinadores estrangeiros que mais vezes treinaram clubes nacionais.
 ```python 
 treinadores["Treinador"].value_counts().sort_values().plot.bar(title="Treinador")
 ```
 <img src="analise_3.png">
 
-Treinadores:
+Neste gráfico observamos os clubes que mais buscaram treinadores gringos ao longo dos anos.
 ```python 
 treinadores["Time"].value_counts().sort_values().plot.bar(title="Clubes com o maior nº de Treinadores")
 ```
 <img src="analise_4.png">
 
-Aproveitamento:
+Observamos aqui a variação de aproveitamento que os treinadores tiveram no país.
 ```python 
 df = pd.DataFrame(treinadores,columns=['Treinador','Aproveitamento'])
 ax = df.plot.bar(x = 'Treinador', y= 'Aproveitamento')
 ```
 <img src="analise_5.png">
 
-Titulos:
+Observe que a grande maioria dos treinadores não obtiveram glórias esportivas.
 ```python 
 treinadores["Titulos"].value_counts().sort_values().plot.bar(ylabel='')
 ```
 <img src="analise_6.png">
 
-Treinadores com mais títulos:
+Treinadores com o maior nº de títulos.
 ```python 
 df = pd.DataFrame(treinadores,columns=['Treinador','Titulos'])
 df.groupby(['Treinador']).sum().plot(kind='pie', y='Titulos', ylabel='')
@@ -126,14 +125,14 @@ plt.legend().remove()
 ```
 <img src="analise_7.png">
 
-Treinadores com mais meses no comando:
+Treinadores com mais meses no comando.
 ```python 
 df = pd.DataFrame(treinadores,columns=['Treinador','Meses_No_Comando'])
 ax = df.plot.bar(x = 'Treinador', y= 'Meses_No_Comando')
 ```
 <img src="analise_8.png">
 
-Correlação entre Aproveitamento e Meses no comando:
+Aqui observamos a correlação entre Aproveitamento e Meses no comando.
 ```python 
 treinadores = pd.DataFrame(treinadores,columns=['Meses_No_Comando','Aproveitamento'])
 df = pd.DataFrame(treinadores)
@@ -141,7 +140,7 @@ _= sns.lmplot(x = 'Meses_No_Comando', y= 'Aproveitamento', data=df, ci=None)
 ```
 <img src="analise_9.png">
 
-Correlação entre Aproveitamento e títulos:
+Agora a correlação entre Aproveitamento e títulos.
 ```python 
 treinadores = pd.DataFrame(treinadores,columns=['Aproveitamento', 'Titulos'])
 df = pd.DataFrame(treinadores)
@@ -153,6 +152,11 @@ fechando o banco de dados:
 ```python 
     conn.close()
 ```
+# Conclusão
+
+Observamos que a tendência de treinadores estrangeiros em terras tupiniquins se encontra em franca ascensão, apesar de os resultados serem "mprevisíveis" com muito altos e baixos, o que de certa forma não deixa de ser da natureza do esporte em si. 
+
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
