@@ -40,7 +40,7 @@ Agora vamos pegar uma amostra do dataset:
 treinadores.head(n=6)
 ```
 
-<img src="post/post_1/body_1.png">
+<img src="body_1.png">
 
 Já é possível perceber alguns problemas no dataset, como a má codificação do cabeçalho 
 
@@ -63,7 +63,7 @@ Procurando problemas nas variaveis:
 ```python 
 treinadores.dtypes
 ```
-<img src="post/post_1/body_2.png">
+<img src="body_2.png">
 
 Converter 'Aproveitamento' de objeto p/ ponto flutante: 
 ```python 
@@ -73,50 +73,50 @@ Conferindo:
 ```python 
 treinadores.dtypes
 ```
-<img src="post/post_1/body_3.png">
+<img src="body_3.png">
 
 Conferindo o resultado das transformações:
 ```python 
 treinadores.head()
 ```
-<img src="post/post_1/body_4.png">
+<img src="body_4.png">
 
 Anos com o maior nº de treinadores ao longo do tempo:
 ```python 
 treinadores["Ano"].value_counts().sort_values().plot.bar(title="Ano com o maior nº de treindadores")
 ```
-<img src="post/post_1/analise_1.png">
+<img src="analise_1.png">
 
 Nacionalidade:
 ```python 
 treinadores["Nacionalidade"].value_counts().plot.pie(ylabel='')
 ```
-<img src="post/post_1/analise_2.png">
+<img src="analise_2.png">
 
 Treinador:
 ```python 
 treinadores["Treinador"].value_counts().sort_values().plot.bar(title="Treinador")
 ```
-<img src="post/post_1/analise_3.png">
+<img src="analise_3.png">
 
 Treinadores:
 ```python 
 treinadores["Time"].value_counts().sort_values().plot.bar(title="Clubes com o maior nº de Treinadores")
 ```
-<img src="post/post_1/analise_4.png">
+<img src="analise_4.png">
 
 Aproveitamento:
 ```python 
 df = pd.DataFrame(treinadores,columns=['Treinador','Aproveitamento'])
 ax = df.plot.bar(x = 'Treinador', y= 'Aproveitamento')
 ```
-<img src="post/post_1/analise_5.png">
+<img src="analise_5.png">
 
 Titulos:
 ```python 
 treinadores["Titulos"].value_counts().sort_values().plot.bar(ylabel='')
 ```
-<img src="post/post_1/analise_6.png">
+<img src="analise_6.png">
 
 Treinadores com mais títulos:
 ```python 
@@ -124,14 +124,14 @@ df = pd.DataFrame(treinadores,columns=['Treinador','Titulos'])
 df.groupby(['Treinador']).sum().plot(kind='pie', y='Titulos', ylabel='')
 plt.legend().remove()
 ```
-<img src="post/post_1/analise_7.png">
+<img src="analise_7.png">
 
 Treinadores com mais meses no comando:
 ```python 
 df = pd.DataFrame(treinadores,columns=['Treinador','Meses_No_Comando'])
 ax = df.plot.bar(x = 'Treinador', y= 'Meses_No_Comando')
 ```
-<img src="post/post_1/analise_8.png">
+<img src="analise_8.png">
 
 Correlação entre Aproveitamento e Meses no comando:
 ```python 
@@ -139,7 +139,7 @@ treinadores = pd.DataFrame(treinadores,columns=['Meses_No_Comando','Aproveitamen
 df = pd.DataFrame(treinadores)
 _= sns.lmplot(x = 'Meses_No_Comando', y= 'Aproveitamento', data=df, ci=None) 
 ```
-<img src="post/post_1/analise_9.png">
+<img src="analise_9.png">
 
 Correlação entre Aproveitamento e títulos:
 ```python 
@@ -147,7 +147,7 @@ treinadores = pd.DataFrame(treinadores,columns=['Aproveitamento', 'Titulos'])
 df = pd.DataFrame(treinadores)
 _= sns.lmplot(x = 'Aproveitamento',y= 'Titulos', data=df, ci=None)
 ```
-<img src="post/post_1/analise_10.png">
+<img src="analise_10.png">
 
 fechando o banco de dados:
 ```python 
