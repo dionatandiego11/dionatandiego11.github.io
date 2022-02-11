@@ -15,13 +15,12 @@ Você poderá ter acesso ao Dataset no meu [Github](https://github.com/dionatand
 ## Mãos a obra!
 
 Primeiramente vamos importar as bibliotecas necessarias:
-
+```python 
     import sqlite3 as sql
     import pandas as pd
     import matplotlib.pyplot as plt
     import seaborn as sns
     %matplotlib inline
-
 
 Em seguida vamos conectar o Banco de Dados ao Pandas:
 
@@ -45,11 +44,11 @@ Neste passo vamos continuar preparando os dados
 
     treinadores = treinadores.replace({',': '.'}, regex=True)
 
-Comandos para remover outliers do dataset:
+Comandos para encontrar e remover outliers do dataset, caso necessario:
 
-    treinadores.duplicated()
-    treinadores.dropna() 
-    treinadores.fillna() 
+    #treinadores.duplicated()
+    #treinadores.dropna() 
+    #treinadores.fillna() 
 
 Procurando problemas nas variaveis: 
 
@@ -112,14 +111,15 @@ Titulos:
 
 <img src="post/analise_6.png">
 
-Treinadores:
-     df = pd.DataFrame(treinadores,columns=['Treinador','Titulos'])
-     df.groupby(['Treinador']).sum().plot(kind='pie', y='Titulos', ylabel='')
-     plt.legend().remove()
+Treinadores com mais títulos:
+
+    df = pd.DataFrame(treinadores,columns=['Treinador','Titulos'])
+    df.groupby(['Treinador']).sum().plot(kind='pie', y='Titulos', ylabel='')
+    plt.legend().remove()
 
 <img src="post/analise_7.png">
 
-rsrsrs:
+Treinadores com mais meses no comando:
 
     df = pd.DataFrame(treinadores,columns=['Treinador','Meses_No_Comando'])
     ax = df.plot.bar(x = 'Treinador', y= 'Meses_No_Comando')
@@ -128,8 +128,7 @@ rsrsrs:
 
 Correlação entre Aproveitamento e Meses no comando:
 
-    treinadores = pd.DataFrame(treinadores,columns=
-    ['Meses_No_Comando','Aproveitamento'])
+    treinadores = pd.DataFrame(treinadores,columns=['Meses_No_Comando','Aproveitamento'])
     df = pd.DataFrame(treinadores);
     _= sns.lmplot(x = 'Meses_No_Comando', 
     y= 'Aproveitamento', data=df, ci=None) 
@@ -150,7 +149,7 @@ fechando o banco de dados:
   
     conn.close()
 
-
+```
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
