@@ -13,4 +13,4 @@ detail_image: assets/portfolio.png
 
 - Se você caiu aqui de paraqueadas ou deseja me conhecer melhor vá até [/read-me](read-me).
 - Caso esteja procurando por projetos como analises e aplicativos? Então vá até [/preview]().
-- Não achou o que precisa? Me mande um email [/dionatanderesende@gmail.com]().
+- Não achou o que precisa? Me mande um email [/dionatandiego@outlook.com]().
