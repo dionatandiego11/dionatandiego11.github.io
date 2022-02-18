@@ -12,7 +12,7 @@ detail_image: ./assets/portfolio.png
  - Analise sobre o desempenho dos treinadores estrangeiros no futebol brasileiro 
    entre 2003 ~ 2021 --> [/post_1](post/post_1/post_1)
 
- - Analise do balanço financeiro do Cruzeiro Esporte Clube entre 2011 ~ 2021 --> /post_2](post/post_2/post_2)
+ - Analise do balanço financeiro do Cruzeiro Esporte Clube entre 2011 ~ 2021 --> [/post_2](post/post_2/post_2)
 
 ## Aplicativos 
 
