@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Uma analise sobre o censo ensino superior ead no Brasil
+title: Analise sobre o censo do ensino superior EAD no Brasil
 
 detail_image: ../../assets/portfolio.png
 ---
 
-# Analise dos treinadores estrangeiros na elite do futebol brasileiro
+# Analise sobre o censo do ensino superior EAD no Brasil
 
 Com o avanço do mercado de ensino superior ead brasileiro, resolvi explorar este fenómeno um pouco mais afundo. 
 

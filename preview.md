@@ -14,6 +14,9 @@ detail_image: ./assets/portfolio.png
 
  - Analise do balanço financeiro do Cruzeiro Esporte Clube entre 2011 ~ 2021 --> [/post_2](post/post_2/post_2)
 
+ - Analise sobre o censo do ensino superior EAD no Brasil entre 2017 ~ 2020 --> [/post_3](post/post_3/post_3)
+
+
 ## Aplicativos 
 
 - App do ônibus 
