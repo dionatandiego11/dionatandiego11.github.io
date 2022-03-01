@@ -15,6 +15,8 @@ Você uma pessoa que pega várias indicações de filmes para assistir e no mome
 
 ## O aplicativo foi escrito em python e no momento só poderá ser utilizado via comando no terminal.
 
+O Download do app poderá ser feito em [/Github/app/app_filme](https://github.com/dionatandiego11/apps/raw/main/APP_Filmes.tar.gz).
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
