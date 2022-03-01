@@ -20,3 +20,4 @@ detail_image: ./assets/portfolio.png
 
 - App do ônibus 
 - robô para encontrar hotéis
+- App para ajudar a escolher filmes à partir de uma lista --> [/app_filme](app_filme)
