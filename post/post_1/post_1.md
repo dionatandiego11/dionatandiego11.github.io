@@ -52,13 +52,13 @@ treinadores = treinadores.rename(columns={'Mesesnocomando': 'Meses_No_Comando'})
 treinadores = treinadores.rename(columns={'Títulos': 'Titulos'})
 ```
 
-Comandos para encontrar e remover outliers do dataset, caso necessario:
+Comandos para encontrar e remover outliers do dataset, caso necessário:
 ```python 
     #treinadores.duplicated()
     #treinadores.dropna() 
     #treinadores.fillna() 
 ```
-Agora vamos procurar problemas nas variaveis: 
+Agora vamos procurar problemas nas variáveis: 
 ```python 
 treinadores.dtypes
 ```
@@ -82,7 +82,7 @@ treinadores.head()
 
 # Após fazer o processamento dos dados, enfim vamos analisar os dados.
 
-Primeiramente vamos observar a tendencia de aumento dos treinadores estrangeiros ao longo do tempo.
+Primeiramente vamos observar a tendência de aumento dos treinadores estrangeiros ao longo do tempo.
 ```python 
 treinadores["Ano"].value_counts().sort_values().plot.bar(title="Ano com o maior nº de treindadores")
 ```
@@ -127,7 +127,7 @@ plt.legend().remove()
 ```
 <img src="analise_7.png">
 
-Treinadores com mais meses no comando.
+Treinadores com maior tempo no cargo.
 ```python 
 df = pd.DataFrame(treinadores,columns=['Treinador','Meses_No_Comando'])
 ax = df.plot.bar(x = 'Treinador', y= 'Meses_No_Comando')
@@ -156,7 +156,7 @@ fechando o banco de dados:
 ```
 # Conclusão
 
-Observamos que a tendência de treinadores estrangeiros em terras tupiniquins se encontra em franca ascensão, apesar de os resultados serem "mprevisíveis" com muito altos e baixos, o que de certa forma não deixa de ser da natureza do esporte em si. 
+Observamos que a tendência de treinadores estrangeiros em terras tupiniquins se encontra em franca ascensão, apesar de os resultados serem "imprevisíveis" com muito altos e baixos, o que de certa forma não deixa de ser da natureza do esporte em si. 
 
 
 ## License
