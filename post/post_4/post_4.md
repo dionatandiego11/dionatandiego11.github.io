@@ -55,10 +55,16 @@ Os dois gastos que mais saltam aos olhos são: Contratação por Tempo Determina
 Então na figura 5 vamos segmentar ambas as informações.
 <img src="5.png">
 
-Para finalizar, observamos na figura 6 os gastos segmentado por Despesa corrente  e Despesa de Capital.
+Continuando na figura 6, observamos a Natureza dos gastos também segmentado por Despesa corrente  e Despesa de Capital.
 <img src="6.png">
 
+Para finalizarm, vamos observar a Natureza dos 3 principais gastos:Saúde(figura 8), Educação(figura 9) e administração(figura 10).
+<img src="8.png">
+<img src="9.png">
+<img src="10.png">
+
 # Conclusão
+ 
 
 ## License
 
