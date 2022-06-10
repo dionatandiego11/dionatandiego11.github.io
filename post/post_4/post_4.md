@@ -40,10 +40,10 @@ A maior parte dos gastos são direcionados para manter a máquina pública opera
 
 Observa-se que Saúde, Educação e Administração levam 75.5% do total das verbas públicas gastas.
 
-Na figura 3 observa-se a origem das receitas(por secretaria)
+Na figura 3 temos a origem das receitas discriminado por secretaria.
 <img src="3.png">
 
-Agora vamos colocar uma lupa sobre a Natureza dos gastos.
+Agora vamos colocar uma lupa sobre a Natureza dos gastos, a figura 4 temos uma perspectiva descritiva.
 <img src="4.png">
 
 Os dois gastos que mais saltam aos olhos são: Contratação por Tempo Determinado e Vencimentos e Vantagens fixas que juntos somam quase 50% dos gastos totais, 48,89%.
@@ -52,8 +52,11 @@ Os dois gastos que mais saltam aos olhos são: Contratação por Tempo Determina
 
 **Vencimentos e Vantagens fixas**:  Pessoal Civil: despesas com subsídios, vencimentos ou remunerações e vantagens do Pessoal Civil, regimes especiais de trabalho, adicionais por tempo de serviço, sexta-parte, pró-labore, gratificação, cumulação de cargos ou funções de execução ou pela prestação de serviços de natureza especial devida aos membros do Ministério Público prevista na Lei Complementar Estadual nº 734 de 26 de novembro de 1993, abonos, quotas, porcentagens fiscais, prêmios de produtividade, salário de pessoal regido pela Consolidação das Leis Trabalhistas (CLT), e outras despesas decorrentes de pessoal em serviço na entidade. Incluem-se as despesas relativas ao pagamento dos valores atrasados decorrentes da aplicação das Leis Federais nºs 10.474, 10.475 e 10.477, de 27 de junho de 2002, sobre a diferença de vencimentos, férias pagas em pecúnia, licença prêmio paga em pecúnia, 13º salário, cumulação, 1/3 de férias, entre outros. Pagamentos relativos a indenizações de férias de exercícios diversos efetuados pelo Poder Judiciário e Ministério Público. 
 
-Então vamos segmentar ambas as informações.
-<img src="10.png">
+Então na figura 5 vamos segmentar ambas as informações.
+<img src="5.png">
+
+Para finalizar, observamos na figura 6 os gastos segmentado por Despesa corrente  e Despesa de Capital.
+<img src="6.png">
 
 # Conclusão
 
