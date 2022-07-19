@@ -65,7 +65,7 @@ Para finalizarm, vamos observar a Natureza dos 3 principais gastos:Saúde(figura
 
 # Conclusão
 
-É interessante notar o auto custo operacional da máquina pública e o dispêndio financeiro em áreas chenves como a administração pública, para estudos futuros analisarei o o fluxo de caixa em função do tempo para ter uma noção global e embasada da tomada de decisão do poder executivo local.
+É interessante notar o alto custo operacional da máquina pública e o dispêndio financeiro em áreas chaves como a administração pública, para estudos futuros analisarei o fluxo de caixa em função do tempo para ter uma noção global e embasada da tomada de decisão do poder executivo local.
 
 ## License
 
