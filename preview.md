@@ -17,7 +17,8 @@ detail_image: ./assets/portfolio.png
 
  Análise Análise sobre Despesas por Programas e Ações da prefeitura de Itaguara-MG entre 01/01/2022 ~ 01/06/2022 --> [/Analise_Programs_e_Ações_Prefeitura_ItaguaraMG](post/post_4/post_4)
 
-
+Análise sobre o mercado de veiculos norte-americano entre 2000 á 2015 -->
+[/Analise_Setor_Automotivo_EUA](post/post_5/post_5)]
 
 ## Aplicativos 
 
